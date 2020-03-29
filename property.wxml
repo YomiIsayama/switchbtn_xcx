@@ -1,0 +1,34 @@
+<!--property.wxml-->
+<!--财产案件计费页面-->
+<view class="page">
+  <view class="body">
+    <text>财产标的金额（单位元）:</text>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+
+
+        <view class="input">
+          <input name="input" placeholder="标的金额" type="number"></input>
+        </view>
+        <text>\n</text>
+        <view>
+          <button form-type="submit" type="primary">计算</button>
+          <text>\n</text>
+          <button form-type="reset">重置</button>
+        </view>
+
+    </form>
+  </view>
+
+   <switch bindchange="switchChange">是否是外星人</switch>
+      <view wx:if="{{condition}}">
+          <view class="body">
+              
+          </view>
+      </view>
+
+  <view class="body">
+
+    <text>\n诉讼费为{{fei}}元，减半收取为{{fei2}}元</text>
+
+  </view>
+</view>

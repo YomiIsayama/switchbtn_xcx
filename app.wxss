@@ -1,0 +1,15 @@
+/**app.wxss**/
+.page{
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  font-size: 47rpx;
+}
+.body{
+  font-size: 45rpx;
+  background-color: papayawhip;
+}
+.input{
+  font-size: 43rpx;
+  background-color: aquamarine;
+}

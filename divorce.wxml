@@ -1,0 +1,25 @@
+<!--divorce.wxml-->
+<!--离婚案件计费页面-->
+<view class="page">
+  <view class="body">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <switch bindchange="switchChange">是否涉及财产分割</switch>
+      <view wx:if="{{condition}}">
+        <text>\n财产标的金额(单位元)：</text>
+        <view class="input">
+          <input name="input" placeholder="标的金额" type="number"></input>
+        </view>
+        <text>\n</text>
+        <view>
+          <button form-type="submit" type="primary">计算</button>
+          <text>\n</text>
+          <button form-type="reset">重量</button>
+        </view>
+        <text>\n诉讼费为{{fei3}}元，减半收取为{{fei4}}元</text>
+      </view>
+      <view wx:else>
+        <text>不涉及财产分割的诉讼费为300元，减半收取为150元</text>
+      </view>
+    </form>
+  </view>
+</view>
